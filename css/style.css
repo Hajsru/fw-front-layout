@@ -49,9 +49,10 @@ a:hover,
 a:focus {
     text-decoration: underline;
 }
+
 .app-container {
     display: grid;
-    grid-template-columns: 3fr 9fr;
+    grid-template-columns: minmax(200px, 2fr) 10fr;
     grid-template-rows: 100vh;
 }
 
@@ -96,8 +97,8 @@ a:focus {
 
 .section__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 50px 25px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 35px 25px;
 }
 
 .items {
