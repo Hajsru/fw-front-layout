@@ -151,9 +151,92 @@ a:focus {
 
 .item__rating {
     margin-top: auto;
+}
+
+.details__rating {
     margin-bottom: 15px;
 }
 
+.rating {
+    position: relative;
+    width: 124px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.rating .rating__empty-star-wrap {
+    width: 124px;
+    height: 25px;
+}
+
+.rating__star-wrap {
+    display: flex;
+}
+
+.rating__fill-star-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.rating__star:not(:last-of-type) {
+    margin-right: 5px;
+}
+
+.rating__star_empty {
+    color: var(--dark-gray);
+}
+
+.rating__star_fill {
+    color: var(--yellow);
+}
+
+.rating[data-rating="0"] .rating__fill-star-wrap {
+    width: 0px;
+}
+
+.rating[data-rating="0.5"] .rating__fill-star-wrap {
+    width: 10px;
+}
+
+.rating[data-rating="1"] .rating__fill-star-wrap {
+    width: 22px;
+}
+
+.rating[data-rating="1.5"] .rating__fill-star-wrap {
+    width: 36px;
+}
+
+.rating[data-rating="2"] .rating__fill-star-wrap {
+    width: 47px;
+}
+
+.rating[data-rating="2.5"] .rating__fill-star-wrap {
+    width: 62px;
+}
+
+.rating[data-rating="3"] .rating__fill-star-wrap {
+    width: 72px;
+}
+
+.rating[data-rating="3.5"] .rating__fill-star-wrap {
+    width: 88px;
+}
+
+.rating[data-rating="4"] .rating__fill-star-wrap {
+    width: 98px;
+}
+
+.rating[data-rating="4.5"] .rating__fill-star-wrap {
+    width: 114px;
+}
+
+.rating[data-rating="5"] .rating__fill-star-wrap {
+    width: 124px;
+}
 .item__btn {
     margin-top: auto;
     padding: 8px 15px;
