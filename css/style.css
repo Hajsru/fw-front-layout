@@ -23,6 +23,32 @@ img {
     max-width: 100%;
 }
 
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: .8em;
+}
+
+a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
 .app-container {
     display: grid;
     grid-template-columns: 3fr 9fr;
@@ -50,11 +76,6 @@ img {
     display: block;
     padding: 10px 0;
     color: #000;
-    text-decoration: none;
-}
-.app-nav__link:hover,
-.app-nav__link:focus {
-    text-decoration: underline;
 }
 
 .app-main {
