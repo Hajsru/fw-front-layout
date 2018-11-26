@@ -1,0 +1,233 @@
+<!-- TODO 
+
+    Форма комментария мероприятия
+    Раздел программа текущего-будущего мероприятия
+    Поиск
+    ВЫравнивание по общей высоте блоков
+    Плавающий блок комменируемого элемента
+-->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ha.js Rating</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="app-container">
+            <aside class="app-aside">
+                <header>
+                    <a href="#home" class="logo-block">
+                        <picture class="logo-picture">
+                            <source srcset="img/logo-small.png" media="(max-width: 767px)">
+                            <source srcset="img/logo-big.png" media="(min-width: 768px)">
+                            <img srcset="img/logo.png" class="logo" alt="Ha.js">
+                        </picture>
+                    </a>
+                </header>
+
+                <nav class="app-nav">
+                    <ul class="app-nav__list">
+                        <li class="app-nav__list-item">
+                            <a href="#events" class="app-nav__link">Митапы</a>
+                        </li>
+                        <li class="app-nav__list-item">
+                            <a href="#speakers" class="app-nav__link">Спикеры</a>
+                        </li>
+                        <li class="app-nav__list-item">
+                            <a href="#reports" class="app-nav__link">Доклады</a>
+                        </li>
+                        <li class="app-nav__list-item">
+                            <a href="#page" class="app-nav__link">Страница комментируемого элемента</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="app-main">
+                <section id="home" class="section">
+                    <h1 class="section__title">Ha.js Rating</h1>
+                    <div class="section__content">
+                        <p>Ha.js Rating - приложение для оценки мероприятия Ha.js</p>
+                    </div>
+                </section>
+
+                <section id="events" class="section">
+                    <h2 class="section__title">Митапы</h2>
+                    <ul class="section__grid items">
+                        <li class="item">
+                            <div class="item__avatar">
+                                <span class="item__number">#1</span>
+                            </div>
+                            <div class="item__title">Первый митап Ha.js</div>
+                            <p class="item__description">Рок-бар "Гараж"</p>
+                            <div class="item__rating">🚀🚀🚀🚀🚀</div>
+                        </li>
+                        <li class="item">
+                            <div class="item__avatar">
+                                <span class="item__number">#2</span>
+                            </div>
+                            <div class="item__title">Ha.js #2</div>
+                            <p class="item__description">Рок-бар "Гараж"</p>
+                            <div class="item__rating">🚀🚀🚀🚀🚀</div>
+                        </li>
+                        <li class="item">
+                            <div class="item__avatar">
+                                <span class="item__number">#3</span>
+                            </div>
+                            <div class="item__title">Ha.js #3</div>
+                            <p class="item__description">Бар "Бонифаций"</p>
+                            <div class="item__rating">🚀🚀🚀🚀🚀</div>
+                        </li>
+                        <li class="item">
+                            <div class="item__avatar">
+                                <span class="item__number">#4</span>
+                            </div>
+                            <div class="item__title">Ha.js #4</div>
+                            <p class="item__description"> Chester Art Pub</p>
+                            <div class="item__rating">🚀🚀🚀🚀🚀</div>
+                        </li>
+                        <li class="item">
+                            <div class="item__avatar">
+                                <span class="item__number">#5</span>
+                            </div>
+                            <div class="item__title">Ha.js #5</div>
+                            <p class="item__description">Коворкинг центр "Пазл"</p>
+                            <div class="item__rating">🚀🚀🚀🚀🚀</div>
+                        </li>
+                        <li class="item">
+                            <div class="item__avatar">
+                                <span class="item__number">#6</span>
+                            </div>
+                            <div class="item__title">Ha.js #6</div>
+                            <p class="item__description">Бургерная "BurgX"</p>
+                            <div class="item__rating">🚀🚀🚀🚀🚀</div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="speakers" class="section">
+                    <h2 class="section__title">Спикеры</h2>
+                    <ul class="section__grid items">
+                        <li class="item">
+                            <div class="item__avatar">
+                                <img src="img/antonov.jpg" alt="" class="item__img">
+                            </div>
+                            <div class="item__title">Игорь Антонов</div>
+                            <p class="item__description">HTML Academy</p>
+                            <div class="item__rating">🚀🚀  🚀</div>
+                        </li>
+                        <li class="item">
+                            <div class="item__avatar">
+                                <img src="img/tkachenko.jpg" alt="" class="item__img">
+                            </div>
+                            <div class="item__title">Денис Ткаченко</div>
+                            <p class="item__description"></p>
+                            <div class="item__rating">🚀🚀🚀🚀🚀</div>
+                        </li>
+                        <li class="item">
+                            <div class="item__avatar">
+                                <img src="img/gorbach.jpg" alt="" class="item__img">
+                            </div>
+                            <div class="item__title">Александр Горбач</div>
+                            <p class="item__description">FoxiFinder (Израиль, Remote)</p>
+                            <div class="item__rating">🚀🚀🚀🚀🚀</div>
+                        </li>
+                        <li class="item">
+                            <div class="item__avatar">
+                                <img src="img/vidyaeva.jpg" alt="" class="item__img">
+                            </div>
+                            <div class="item__title">Валентина Видяева</div>
+                            <p class="item__description">Верстальщик "Перфектура"</p>
+                            <div class="item__rating">🚀🚀🚀🚀🚀</div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="reports" class="section">
+                    <h2 class="section__title">Доклады</h2>
+                    <div class="section__grid">
+                        <ul class="section__grid items">
+                            <li class="item">
+                                <div class="item__avatar">
+                                    <img src="img/report1.jpg" alt="" class="item__cover">
+                                </div>
+                                <div class="item__title">«Убей в себе программиста-ковбоя»</div>
+                                <p class="item__description">Александр Горбач</p>
+                                <div class="item__rating">🚀🚀🚀</div>
+                            </li>
+                            <li class="item">
+                                <div class="item__avatar">
+                                    <img src="img/report2.jpg" alt="" class="item__cover">
+                                </div>
+                                <div class="item__title">«Тянем резину»</div>
+                                <p class="item__description">Борис Черепанов</p>
+                                <div class="item__rating">🚀🚀🚀🚀</div>
+                            </li>
+                            <li class="item">
+                                <div class="item__avatar">
+                                    <img src="img/report3.jpg" alt="" class="item__cover">
+                                </div>
+                                <div class="item__title">«CSS, которого у вас нет»</div>
+                                <p class="item__description">Валентина Видяева</p>
+                                <div class="item__rating">🚀🚀🚀🚀🚀</div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="page" class="section">
+                    <div class="item-page">
+                        <div class="item-page__aside">
+                            <div class="item__avatar">
+                                    <img src="img/report1.jpg" alt="" class="item__cover">
+                                </div>
+                                <div class="item__rating">🚀🚀🚀🚀🚀</div>
+                                <div class="item__title">«Убей в себе программиста-ковбоя»</div>
+                                <p class="item__description">Александр Горбач</p>
+
+                                <button class="item__btn">Комментировать</button>
+                        </div>
+                        <div class="item-page__main">
+                            <div class="comments-list">
+                                <div class="comment">
+                                    <div class="comment__author">Автор комментария</div>
+                                    <div class="comment__block">
+                                        <div class="comment__block-title">Достоинства</div>
+                                        <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora et illum molestiae esse dolore dolores aliquid reprehenderit ab provident aperiam!</div>
+                                    </div>
+                                    <div class="comment__block">
+                                        <div class="comment__block-title">Недостатки</div>
+                                        <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora et illum molestiae esse dolore dolores aliquid reprehenderit ab provident aperiam!</div>
+                                    </div>
+                                    <div class="comment__block">
+                                        <div class="comment__block-title">Комментарий</div>
+                                        <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora et illum molestiae esse dolore dolores aliquid reprehenderit ab provident aperiam!</div>
+                                    </div>
+                                </div>
+
+                                <div class="comment">
+                                    <div class="comment__block">
+                                        <div class="comment__author">Автор комментария</div>
+                                        <div class="comment__block-title">Комментарий</div>
+                                        <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora et illum molestiae esse dolore dolores aliquid reprehenderit ab provident aperiam!</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
