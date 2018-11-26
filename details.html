@@ -1,9 +1,3 @@
-<!-- TODO 
-    Форма комментария мероприятия
-    Раздел программа текущего-будущего мероприятия
-    Поиск
--->
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -49,30 +43,37 @@
             </aside>
 
             <main class="app-main">
-                <section class="section">
-                    <h1 class="section__title">Ha.js</h1>
-                    <div class="section__content">
-                        <h2>Встреча фронтенд-разработчиков Хабаровска.</h2>
-                        <p>27 октября 2018, 14:00, ул. Ленинградская 28Г, BurgX.</p>
-                        <p>Участие платное — 250 рублей при регистрации на сайте или 350 рублей в день мероприятия. Как участвовать бесплатно? Легко! Станьте докладчиком.</p>
-                        <p>В разделах <a href="events.html">Митапы</a>,
-                        <a href="speakers.html">Спикеры</a> и 
-                        <a href="reports.html">Доклады</a> можно найти все материалы, а также оценить спикера, его доклад или митап в целом.</p>
-                    </div>
-                </section>
-
                 <section id="page" class="section">
                     <div class="item-page">
                         <div class="item-page__aside">
                             <div class="item__avatar">
-                                    <img src="img/report1.jpg" alt="" class="item__cover">
+                                <img src="img/report1.jpg" alt="" class="item__cover">
+                            </div>
+                            <div class="rating item__rating details__rating" data-rating="5">
+                                <div class="rating__star-wrap rating__empty-star-wrap">
+                                    <span class="rating__star rating__star_empty">&#9734;</span>
+                                    <span class="rating__star rating__star_empty">&#9734;</span>
+                                    <span class="rating__star rating__star_empty">&#9734;</span>
+                                    <span class="rating__star rating__star_empty">&#9734;</span>
+                                    <span class="rating__star rating__star_empty">&#9734;</span>
                                 </div>
-                                <div class="item__rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                                <div class="item__title">«Убей в себе программиста-ковбоя»</div>
-                                <p class="item__description">Александр Горбач</p>
+                                <div class="rating__star-wrap rating__fill-star-wrap">
+                                    <span class="rating__star rating__star_fill">&#9733;</span>
+                                    <span class="rating__star rating__star_fill">&#9733;</span>
+                                    <span class="rating__star rating__star_fill">&#9733;</span>
+                                    <span class="rating__star rating__star_fill">&#9733;</span>
+                                    <span class="rating__star rating__star_fill">&#9733;</span>
+                                </div>
+                            </div>
 
-                                <button class="item__btn">Комментировать</button>
+                            <h1 class="item__title">«Убей в себе программиста-ковбоя»</h1>
+                            <h2 class="item__description">Александр Горбач</h2>
+                            <p><a href="" class="item__data-link">Презентация</a></p>
+                            <p><a href="" class="item__data-link">Видео</a></p>
+
+                            <button class="item__btn">Комментировать</button>
                         </div>
+
                         <div class="item-page__main">
                             <div class="comments-list">
                                 <div class="comment">

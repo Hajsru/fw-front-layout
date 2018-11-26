@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ha.js Rating</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="app-container">
+            <aside class="app-aside">
+                <header>
+                    <a href="index.html" class="logo-block">
+                        <picture class="logo-picture">
+                            <source srcset="img/logo-small.png" media="(max-width: 767px)">
+                            <source srcset="img/logo-big.png" media="(min-width: 768px)">
+                            <img srcset="img/logo.png" class="logo" alt="Ha.js">
+                        </picture>
+                    </a>
+                </header>
+
+                <nav class="app-nav">
+                    <ul class="app-nav__list">
+                        <li class="app-nav__list-item">
+                            <a href="events.html" class="app-nav__link">Митапы</a>
+                        </li>
+                        <li class="app-nav__list-item">
+                            <a href="speakers.html" class="app-nav__link">Спикеры</a>
+                        </li>
+                        <li class="app-nav__list-item">
+                            <a href="reports.html" class="app-nav__link">Доклады</a>
+                        </li>
+                        <li class="app-nav__list-item">
+                            <a href="registration.html" class="app-nav__link">Регистрация на митап</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="app-main">
+                <section class="section">
+                    <h1 class="section__title">Доклады</h1>
+                    <div class="section__grid">
+                        <ul class="section__grid items">
+                            <li class="item">
+                                <a href="details.html" class="item__link">
+                                    <div class="item__avatar">
+                                        <img src="img/report1.jpg" alt="" class="item__cover">
+                                    </div>
+                                    <div class="item__title">«Убей в себе программиста-ковбоя»</div>
+                                    <p class="item__description">Александр Горбач</p>
+                                    <div class="rating item__rating" data-rating="5">
+                                        <div class="rating__star-wrap rating__empty-star-wrap">
+                                            <span class="rating__star rating__star_empty">&#9734;</span>
+                                            <span class="rating__star rating__star_empty">&#9734;</span>
+                                            <span class="rating__star rating__star_empty">&#9734;</span>
+                                            <span class="rating__star rating__star_empty">&#9734;</span>
+                                            <span class="rating__star rating__star_empty">&#9734;</span>
+                                        </div>
+                                        <div class="rating__star-wrap rating__fill-star-wrap">
+                                            <span class="rating__star rating__star_fill">&#9733;</span>
+                                            <span class="rating__star rating__star_fill">&#9733;</span>
+                                            <span class="rating__star rating__star_fill">&#9733;</span>
+                                            <span class="rating__star rating__star_fill">&#9733;</span>
+                                            <span class="rating__star rating__star_fill">&#9733;</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="details.html" class="item__link">
+                                    <div class="item__avatar">
+                                        <img src="img/report3.jpg" alt="" class="item__cover">
+                                    </div>
+                                    <div class="item__title">«Тянем резину»</div>
+                                    <p class="item__description">Борис Черепанов</p>
+                                    <div class="rating item__rating" data-rating="4">
+                                        <div class="rating__star-wrap rating__empty-star-wrap">
+                                            <span class="rating__star rating__star_empty">&#9734;</span>
+                                            <span class="rating__star rating__star_empty">&#9734;</span>
+                                            <span class="rating__star rating__star_empty">&#9734;</span>
+                                            <span class="rating__star rating__star_empty">&#9734;</span>
+                                            <span class="rating__star rating__star_empty">&#9734;</span>
+                                        </div>
+                                        <div class="rating__star-wrap rating__fill-star-wrap">
+                                            <span class="rating__star rating__star_fill">&#9733;</span>
+                                            <span class="rating__star rating__star_fill">&#9733;</span>
+                                            <span class="rating__star rating__star_fill">&#9733;</span>
+                                            <span class="rating__star rating__star_fill">&#9733;</span>
+                                            <span class="rating__star rating__star_fill">&#9733;</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                    <a href="details.html" class="item__link">
+                                    <div class="item__avatar">
+                                        <img src="img/report2.jpg" alt="" class="item__cover">
+                                    </div>
+                                    <div class="item__title">«CSS, которого у вас нет»</div>
+                                    <p class="item__description">Валентина Видяева</p>
+                                    <div class="rating item__rating" data-rating="5">
+                                    <div class="rating__star-wrap rating__empty-star-wrap">
+                                        <span class="rating__star rating__star_empty">&#9734;</span>
+                                        <span class="rating__star rating__star_empty">&#9734;</span>
+                                        <span class="rating__star rating__star_empty">&#9734;</span>
+                                        <span class="rating__star rating__star_empty">&#9734;</span>
+                                        <span class="rating__star rating__star_empty">&#9734;</span>
+                                    </div>
+                                    <div class="rating__star-wrap rating__fill-star-wrap">
+                                        <span class="rating__star rating__star_fill">&#9733;</span>
+                                        <span class="rating__star rating__star_fill">&#9733;</span>
+                                        <span class="rating__star rating__star_fill">&#9733;</span>
+                                        <span class="rating__star rating__star_fill">&#9733;</span>
+                                        <span class="rating__star rating__star_fill">&#9733;</span>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
